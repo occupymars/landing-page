@@ -3,20 +3,22 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col p-8 gap-5 max-w-5xl justify-center h-full">
+    <main className="flex flex-col p-8 gap-5 max-w-5xl justify-center h-full items-center mx-auto">
       <Image
         src={"/logo.svg"}
         alt="logo"
-        width={128}
-        height={64}
+        width={256}
+        height={128}
         className="absolute top-8"
       />
       <div>
-        <p>Hello,</p>
+        <p className="text-center">Hello,</p>
       </div>
       <div className="space-y-2">
-        <p>I am Vikas, the founder of Occupy Mars Private Limited.</p>
-        <p>
+        <p className="text-center">
+          I am Vikas, the founder of Occupy Mars Private Limited.
+        </p>
+        <p className="text-center">
           We are a leading technology and media company based in India. We
           specialise in services ranging from custom software development,
           talent outsourcing, strategy consulting and much more. If you are
@@ -29,7 +31,7 @@ export default function Home() {
             vikas@occupymars.co.in
           </Link>
         </p>
-        <p>
+        <p className="text-center">
           For all other quires, contact{" "}
           <Link
             href={"mailto:support@occupymars.co.in?subject=General%20Inquiry"}
@@ -40,8 +42,8 @@ export default function Home() {
         </p>
       </div>
       <div>
-        <p>Regards</p>
-        <p>Vikas Chahar (Founder/Director)</p>
+        <p className="text-center">Regards</p>
+        <p className="text-center">Vikas Chahar (Founder/Director)</p>
       </div>
     </main>
   );
