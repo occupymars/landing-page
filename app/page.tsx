@@ -24,20 +24,11 @@ export default function Home() {
           talent outsourcing, strategy consulting and much more. If you are
           looking to work with us, please reach out at
           <Link
-            href={"mailto:vikas@occupymars.co.in?subject=Business%20Inquiry"}
+            href={"mailto:hello@occupymars.co.in?subject=Business%20Inquiry"}
             className="underline"
           >
             {" "}
-            vikas@occupymars.co.in
-          </Link>
-        </p>
-        <p className="text-center">
-          For all other quires, contact{" "}
-          <Link
-            href={"mailto:support@occupymars.co.in?subject=General%20Inquiry"}
-            className="underline"
-          >
-            support@occupymars.co.in
+            hello@occupymars.co.in
           </Link>
         </p>
       </div>
