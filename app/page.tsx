@@ -12,29 +12,28 @@ export default function Home() {
         className="absolute top-8"
       />
       <div>
-        <p className="text-center">Hello,</p>
-      </div>
-      <div className="space-y-2">
-        <p className="text-center">
-          I am Vikas, the founder of Occupy Mars Private Limited.
-        </p>
-        <p className="text-center">
-          We are a leading technology and media company based in India. We
-          specialise in services ranging from custom software development,
-          talent outsourcing, strategy consulting and much more. If you are
-          looking to work with us, please reach out at
+        <p>
+          <strong>DEAR BUILDERS,</strong>
+          <br />
+          <br /> The future belongs to teams that ship faster, break fewer
+          things, and outpace technical debt. At <strong>Occupy Mars</strong>,
+          we turn your stack's chaos into clarity through <strong>Rust </strong>
+          and <strong>React.js</strong> expertise. We design backends that scale
+          without drama and frontends users actually love. Just engineers who've
+          shipped at scale, ready to untangle legacy systems and build code that
+          survives tomorrow. Let's build something that endures.
+          <br />
+          <br /> — <strong>Occupy Mars</strong>
+          <br />
+          <br />
+          P.S. →
           <Link
-            href={"mailto:hello@occupymars.co.in?subject=Business%20Inquiry"}
-            className="underline"
+            href="mailto:hello@occupymars.co.in?subject=Project%20Inquiry"
+            className="mx-2"
           >
-            {" "}
             hello@occupymars.co.in
           </Link>
         </p>
-      </div>
-      <div>
-        <p className="text-center">Regards</p>
-        <p className="text-center">Vikas Chahar (Founder/Director)</p>
       </div>
     </main>
   );
