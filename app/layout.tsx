@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Special_Elite } from "next/font/google";
 import "./globals.css";
+import BackgroundPattern from "@/components/backgroundPattern";
 
 const specialElite = Special_Elite({
   variable: "--font-special-elite-sans",
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${specialElite.variable} antialiased h-screen`}>
+        <BackgroundPattern />
         {children}
       </body>
     </html>
