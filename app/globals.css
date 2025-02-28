@@ -5,16 +5,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-special-elite-sans: "Special Elite", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --font-special-elite-sans: "Special Elite", sans-serif;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
+  font-family: var(--font-special-elite-sans);
 }
