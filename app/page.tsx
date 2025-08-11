@@ -18,9 +18,7 @@ export default function Home() {
           <br />
           <br /> The future belongs to teams that ship faster, break fewer
           things, and outpace technical debt. At <strong>Occupy Mars</strong>,
-          we turn your stack's chaos into clarity through <strong>Rust </strong>
-          and <strong>React.js</strong> expertise. We design backends that scale
-          without drama and frontends users actually love. Just engineers who've
+          we design backends that scale without drama. Just engineers who've
           shipped at scale, ready to untangle legacy systems and build code that
           survives tomorrow. Let's build something that endures.
           <br />
@@ -29,7 +27,7 @@ export default function Home() {
           <br />
           P.S. →
           <Link
-            href="mailto:hello@occupymars.co.in?subject=Project%20Inquiry"
+            href="mailto:hello@occupymars.co.in?subject=Hello%20Occupy%20Mars"
             className="mx-2"
           >
             hello@occupymars.co.in

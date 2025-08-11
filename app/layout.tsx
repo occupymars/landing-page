@@ -11,7 +11,7 @@ const specialElite = Special_Elite({
 
 export const metadata: Metadata = {
   title: "Occupy Mars",
-  description: "Technology and media consultancy!",
+  description: "Software and Technology!",
 };
 
 export default function RootLayout({
