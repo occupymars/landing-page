@@ -14,15 +14,17 @@ export default function Home() {
       />
       <div>
         <p>
-          <strong>DEAR BUILDERS,</strong>
+          <strong>DEAR PARENTS,</strong>
           <br />
-          <br /> The future belongs to teams that ship faster, break fewer
-          things, and outpace technical debt. At <strong>Occupy Mars</strong>,
-          we design backends that scale without drama. Just engineers who've
-          shipped at scale, ready to untangle legacy systems and build code that
-          survives tomorrow. Let's build something that endures.
+          <br /> The future belongs to children who read before they scroll. At{" "}
+          <strong>Occupy Mars</strong>, we build <strong>Slate</strong> — a
+          calm, paper-like reading world for ages 2 to 10. No feeds, no ads, no
+          tracking. Just stories worth finishing, on a screen that feels like a
+          page. We believe attention is the most valuable thing a child owns,
+          and we're building the one device that protects it. Less screen, more
+          slate.
           <br />
-          <br /> — <strong>Occupy Mars</strong>
+          <br /> — <strong>Occupy Mars</strong>, makers of <strong>Slate</strong>
           <br />
           <br />
           P.S. →

@@ -10,8 +10,9 @@ const specialElite = Special_Elite({
 });
 
 export const metadata: Metadata = {
-  title: "Occupy Mars",
-  description: "Software and Technology!",
+  title: "Occupy Mars — makers of Slate",
+  description:
+    "Slate is a calm, paper-like reading world for ages 2 to 10. No feeds, no ads, no tracking. Less screen, more slate.",
 };
 
 export default function RootLayout({
