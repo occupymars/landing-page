@@ -73,10 +73,10 @@ export default function PrivacyPage() {
             this site, that is at most our email correspondence), and withdraw
             consent, at any time. Email{" "}
             <Link
-              href="mailto:hello@occupymars.co.in?subject=Privacy%20Request"
+              href="mailto:support@occupymars.co.in?subject=Privacy%20Request"
               className="text-ink underline underline-offset-4"
             >
-              hello@occupymars.co.in
+              support@occupymars.co.in
             </Link>{" "}
             and we&rsquo;ll act promptly.
           </p>
@@ -94,10 +94,10 @@ export default function PrivacyPage() {
       <p className="mt-12 border-t border-line pt-6 text-xs text-ink-faint">
         Occupy Mars Private Limited · Jaipur, Rajasthan, India · Questions?{" "}
         <Link
-          href="mailto:hello@occupymars.co.in"
+          href="mailto:support@occupymars.co.in"
           className="underline underline-offset-4"
         >
-          hello@occupymars.co.in
+          support@occupymars.co.in
         </Link>
       </p>
     </main>

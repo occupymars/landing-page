@@ -45,10 +45,10 @@ export default function Home() {
           <p>
             P.S. →{" "}
             <Link
-              href="mailto:hello@occupymars.co.in?subject=Hello%20Occupy%20Mars"
+              href="mailto:support@occupymars.co.in?subject=Hello%20Occupy%20Mars"
               className="text-ink underline underline-offset-4"
             >
-              hello@occupymars.co.in
+              support@occupymars.co.in
             </Link>
           </p>
         </div>
@@ -97,10 +97,10 @@ export default function Home() {
           Jaipur, Rajasthan, India
           <br />
           <Link
-            href="mailto:hello@occupymars.co.in?subject=Hello%20Occupy%20Mars"
+            href="mailto:support@occupymars.co.in?subject=Hello%20Occupy%20Mars"
             className="text-ink underline underline-offset-4"
           >
-            hello@occupymars.co.in
+            support@occupymars.co.in
           </Link>
         </p>
       </section>
