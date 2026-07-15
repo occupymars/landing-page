@@ -2,22 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+  Occupy Mars — parent org of Slate.
+  Shares Slate's "E-Ink Premium" foundation: a warm grayscale (e-paper)
+  palette, editorial serif headings, and a paper-grain overlay.
+*/
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --font-special-elite-sans: "Special Elite", sans-serif;
+  --paper: #f4f2ec; /* warm bone background */
+  --paper-dim: #e8e5dc; /* subtle section differentiation */
+  --ink: #1a1a17; /* warm near-black, primary text */
+  --ink-soft: #4a473f; /* secondary text */
+  --ink-faint: #847f72; /* captions, meta (AA on paper) */
+  --line: #cfcabd; /* hairline borders / dividers */
+
+  --background: var(--paper);
+  --foreground: var(--ink);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --font-special-elite-sans: "Special Elite", sans-serif;
-  }
+html {
+  background: var(--paper);
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-special-elite-sans);
+  font-family: var(--font-plex-sans), system-ui, sans-serif;
+  font-feature-settings: "kern", "liga", "calt";
+  position: relative;
+}
+
+/* Headlines: editorial serif, optical sizing, tight & crisp */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-weight: 460;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+@layer components {
+  /* Eyebrow / section label */
+  .eyebrow {
+    font-family: var(--font-plex-mono), monospace;
+    font-size: 0.75rem;
+    line-height: 1.2;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 500;
+  }
+}
+
+/*
+  Paper-grain overlay — a low-opacity fractal-noise layer fixed over the
+  whole viewport. Sells the "matte e-paper" tactility. Sits above the
+  background, below content, ignores pointer events.
+*/
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+  background-image: url("/textures/grain.svg");
+  background-size: 220px 220px;
+}
+
+/* Keep page content above the grain layer */
+body > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }

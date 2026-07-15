@@ -11,6 +11,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        paper: "var(--paper)",
+        "paper-dim": "var(--paper-dim)",
+        ink: "var(--ink)",
+        "ink-soft": "var(--ink-soft)",
+        "ink-faint": "var(--ink-faint)",
+        line: "var(--line)",
+      },
+      fontFamily: {
+        display: ["var(--font-fraunces)", "Georgia", "serif"],
+        sans: ["var(--font-plex-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-plex-mono)", "monospace"],
       },
     },
   },
